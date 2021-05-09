@@ -86,7 +86,7 @@ class _HomePageState extends State<HomePage> {
                     children: [
                       CustomBox(
                         route: Block(),
-                        icon: Icons.lock_sharp,
+                        icon: Icons.lock_rounded,
                         backgroundcolor: Colors.white24,
                         color: Colors.white,
                         font: 12,

@@ -140,7 +140,7 @@ class _CarouselState extends State<Carousel> {
                 children: [
                   SizedBox(width: 20),
                   Icon(
-                    Icons.compare_arrows,
+                    Icons.import_export_sharp,
                     color: Colors.black45,
                   ),
                   SizedBox(width: 10),
