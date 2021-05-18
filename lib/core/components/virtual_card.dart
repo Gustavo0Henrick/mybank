@@ -107,7 +107,7 @@ class _VirtualCardState extends State<VirtualCard> {
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
                       primary: Colors.orange,
-                      elevation: 5,
+                      elevation: 0,
                     ),
                     onPressed: () {
                       setState(() {
@@ -128,7 +128,7 @@ class _VirtualCardState extends State<VirtualCard> {
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
                       primary: Colors.red[800],
-                      elevation: 5,
+                      elevation: 0,
                     ),
                     onPressed: () {
                       setState(() {

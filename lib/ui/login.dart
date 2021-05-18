@@ -25,7 +25,8 @@ class _LoginState extends State<Login> {
       ),
       backgroundColor: Colors.orange,
       body: SingleChildScrollView(
-        physics: NeverScrollableScrollPhysics(),
+        
+        // physics: NeverScrollableScrollPhysics(),
         child: Container(
           height: MediaQuery.of(context).size.height * 1,
           width: MediaQuery.of(context).size.width * 1,

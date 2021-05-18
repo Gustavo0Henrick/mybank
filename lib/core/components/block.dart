@@ -40,7 +40,7 @@ class Block extends StatelessWidget {
             child: ElevatedButton(
               style: ElevatedButton.styleFrom(
                 primary: Colors.red[700],
-                elevation: 5,
+                elevation: 0,
               ),
               onPressed: () {},
               child: Text(

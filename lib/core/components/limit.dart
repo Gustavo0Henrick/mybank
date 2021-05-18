@@ -41,16 +41,26 @@ class _LimitState extends State<Limit> {
               fontWeight: FontWeight.w700,
             ),
           ),
-          Slider(
-              divisions: 10,
-              min: 0,
-              max: 3000,
-              value: value,
-              onChanged: (double newValue) {
-                setState(() {
-                  value = newValue;
-                });
-              }),
+          SliderTheme(
+            data: SliderTheme.of(context).copyWith(
+              activeTickMarkColor: Colors.transparent,
+              inactiveTickMarkColor: Colors.transparent,
+              trackHeight: 10,
+              overlayShape: RoundSliderOverlayShape(
+                overlayRadius: 20,
+              ),
+            ),
+            child: Slider(
+                divisions: 10,
+                min: 0,
+                max: 3000,
+                value: value,
+                onChanged: (double newValue) {
+                  setState(() {
+                    value = newValue;
+                  });
+                }),
+          ),
           Text(
             ' R\$ $valueString',
             style: TextStyle(
@@ -61,9 +71,11 @@ class _LimitState extends State<Limit> {
           ),
           ElevatedButton(
               style: ElevatedButton.styleFrom(
-                elevation: 5,
+                elevation: 0,
               ),
-              onPressed: () {},
+              onPressed: () {
+                print("$valueString");
+              },
               child: Text(
                 'Definir',
                 style: TextStyle(
